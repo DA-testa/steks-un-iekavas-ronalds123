@@ -25,9 +25,8 @@ def find_mismatch(text):
             opening_brackets_stack.pop()
         
         if(opening_brackets_stack):
-            return opening_brackets_stack[-1].position
-        else:
-            return "Success"
+            return opening_brackets_stack[-1].position, 
+        else: return "Success"
 
 
 def main():
@@ -35,9 +34,6 @@ def main():
     if "I" in text:
         text = input()
         mismatch = find_mismatch(text)
-        if not mismatch:
-            return print ("Success")
-        else:
-            return print (mismatch)
+        print (mismatch)
 if __name__ == "__main__":
     main()
