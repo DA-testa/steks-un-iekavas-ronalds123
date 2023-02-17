@@ -36,6 +36,7 @@ def main():
     else:
         mismatch = find_mismatch(text)
         if mismatch == "Success":
+            print(mismatch)
             
 if __name__ == "__main__":
     main()
