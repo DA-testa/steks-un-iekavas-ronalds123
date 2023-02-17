@@ -36,10 +36,7 @@ def main():
     if "I" in text:
         text = input()
         mismatch = find_mismatch(text)
-        if not mismatch:
-            return print ("Success")
-        else:
-            return print (mismatch)
+        print (mismatch)
 
 if __name__ == "__main__":
-     main()
+    main()
